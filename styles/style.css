@@ -267,6 +267,19 @@ body {
 }
 
 @media screen and (max-width: 768px){
+    .decodificador__entrada__texto__buttons {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .decodificador__entrada__texto__buttons__button__cript {
+        width: 100%;
+    }
+
+    .decodificador__entrada__texto__buttons__button__decript {
+        width: 100%;
+    }
+    
     .dialog__container {
         min-width: 80vw;
     }
