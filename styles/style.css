@@ -267,6 +267,10 @@ body {
 }
 
 @media screen and (max-width: 768px){
+    body {
+        padding: 16px;
+    }
+    
     .decodificador__entrada__texto__buttons {
         flex-direction: column;
         gap: 16px;
