@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Alura Challenge I</title>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <main class="decodificador">
+        <div class="decodificador__entrada">
+            <img width="32" height="48" class="decodificador__entrada__icon" src="images/icon.svg" alt="Alura icone">
+            <div class="decodificador__entrada__texto">
+                <textarea class="decodificador__entrada__texto__input" placeholder="Digite seu texto" name="text" cols="30" rows="10"></textarea>
+                <div class="decodificador__entrada__texto__info">
+                    <img src="images/exclamation.svg" alt="simbolo de exclamacao" class="decodificador__entrada__texto__info__icon">
+                    <p class="decodificador__entrada__texto__info__texto">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="decodificador__entrada__texto__buttons">
+                    <button onclick="codificar()" class="decodificador__entrada__texto__buttons__button__cript">Criptografar</button>
+                    <button onclick="decodificar()" class="decodificador__entrada__texto__buttons__button__decript">Descriptografar</button>
+                </div>
+            </div>
+        </div>
+        <div class="decodificador__resultado">
+            <div class="decodificador__resultado__if">
+                <textarea class="decodificador__resultado__texto__output" placeholder="Digite seu texto" name="text" cols="30" rows="10"></textarea>
+                <button onclick="adicionarClipboard()" class="decodificador__resultado__texto__button">Copiar</button>
+            </div>
+            <div class="decodificador__resultado__else">
+                <img class="decodificador__resultado__imagem" src="images/nothing-found.svg" alt="">
+                <div class="decodificador__resultado__texto">
+                    <h2 class="decodificador__resultado__texto__titulo">Nenhuma mensagem encontrada</h2>
+                    <p class="decodificador__resultado__texto__paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <dialog class="dialog">
+        <div class="dialog__container">
+            <img class="dialog__container__imagem" src="images/thumb-down.svg" alt="">
+            <h2 class="dialog__container__titulo">Mensagem inválida</h2>
+            <p class="dialog__container__paragrafo">Sua mensagem contém caracteres inválidos!</p>
+            <button onclick="fecharModal()" class="dialog__container__button">Fechar</button>
+        </div>
+    </dialog>
+</body>
+</html>
