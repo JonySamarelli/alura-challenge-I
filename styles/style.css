@@ -205,7 +205,8 @@ body {
 }
 
 .dialog {
-    position: absolute;
+    /* position always on middle */
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -262,5 +263,11 @@ body {
 
     .decodificador__resultado__imagem {
         display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .dialog__container {
+        min-width: 80vw;
     }
 }
